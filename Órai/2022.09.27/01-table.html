@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta name="Author" content="Kovács Attila">
+    <meta charset="UTF-8">
+    <title>Táblázat minta</title>
+    <link rel="stylesheet" href="01-table.css">
+    <!-- Relatív elérési út -->
+    <!-- <link rel="stylesheet" href="css/01-table.css"> -->
+    
+    <!-- Abszolút elérési út -->
+    <link rel="stylesheet" href="C:\Users\karobatti\repos\1-13.1\HTML\1-13.1-2022-HTML\Órai\2022.09.27\css\01-table.css">
+
+</head>
+<body>
+    <h1>Táblázat gyakorlás</h1>
+
+    <table>
+        <tr>
+            <colgroup>
+                <col span="3">
+                <col span="2" id="kiemelt">
+            </colgroup>
+            <th>1. fejléc</th>
+            <th colspan="2">2. fejléc</th>
+            <!-- <th>3. fejléc</th> -->
+            <th>4. fejléc</th>
+            <th>5. fejléc</th>
+        </tr>
+        <tr>
+            <th rowspan="2">1. sor</th>
+            <td>2. mező</td>
+            <td>3. mező</td>
+            <td>4. mező</td>
+            <td>5. mező</td>
+        </tr>
+        <tr>
+            <!-- <th>2. sor</th> -->
+            <td>2. mező</td>
+            <td>3. mező</td>
+            <td>4. mező</td>
+            <td>5. mező</td>
+        </tr>
+        <tr>
+            <th>3. sor</th>
+            <td>2. mező</td>
+            <td>3. mező</td>
+            <td>4. mező</td>
+            <td>5. mező</td>
+        </tr>
+    </table>
+    <div class="bekezdések">
+        <h2>1. bekezdés.</h2>
+        <p>Lorem ipsum dolor sit amet <span class="fontos">consectetur</span> adipisicing elit. Nobis aliquid earum temporibus voluptatum soluta enim suscipit, sit repudiandae molestiae voluptatibus.</p>
+        <h2>2. bekezdés. </h2>
+        <p>Lorem ipsum dolor sit amet consectetur <span class="fontos">adipisicing</span> elit. Dolores ipsum rerum nostrum numquam, labore amet at aut. Esse culpa numquam voluptates aperiam quibusdam maxime velit.</p>
+    </div>
+    <div>
+        <img src="images/chicken.jpg" 
+        alt="Ide egy tyúkokat ábrázoló kép kellene" 
+        title="Ezek baromfik"
+        width="30%">
+    </div>
+</body>
+</html>
