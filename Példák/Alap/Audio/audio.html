@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+	<meta charset="utf-8">
+	<title>audio gyakorlás</title>
+	<meta name="author" content="Kovács Attila Róbert">
+	<meta name="keywords" content="Sirius,videó">
+	<meta name="description" content="videó beszúrás gyakorlása">
+</head>
+
+<body>
+	<h1>Audio beillesztés</h1>
+	<!-- 
+		controls – irányító gombok megjelenítése
+		autoplay – automatikusan elindítja a videót
+		loop – végtelenített lejátszása
+		poster– egy képet tehetünk be, amíg rá nem kattintanak a play gombra, addig az látható
+		preload – a videót az oldallal együtt betölti
+		src – A forrásfájl helyét adhatjuk meg vele
+		autobuffer – automatikus bufferelés az elindulás után
+	 -->
+	<!-- 1. forma -->
+	<!-- <audio src="./audio/minta.mp3" width="50%" controls autoplay></audio> -->
+	<!-- 2. forma -->
+	<audio width="50%" controls autoplay>
+		<!-- <source src="./audio/minta.wav" type="audio/wav" /> -->
+		<!-- <source src="./audio/minta.ogg" type="audio/ogg" /> -->
+		<source src="./audio/minta.mp3" type="audio/mp3" />
+		A böngészője nem támogatja az audio elemet!
+	</audio>
+</body>
+
+</html>

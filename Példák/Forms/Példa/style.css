@@ -1,0 +1,128 @@
+﻿/* CSS Reset, nem muszáj, de ártani nem árt */  
+{  
+    margin: 0;  
+    padding: 0;  
+} 
+
+/* Itt mondjuk el a böngészőnek, hogy a html5 element-eket block-ként kezelje */  
+html, body, h1, form, fieldset, legend, ol, li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body { /* definiáljuk az alaphátteret és még pár dolgot */
+	background: #F0F0F0; /* háttér szín */
+	color: #991111; /* betű szín */
+	padding: 0;
+	font-family: Georgia, serif;
+	}
+
+	h1 { /* az oldal címének csinosítása */
+		font-size: 28px; /* betűméret */
+		text-align: center; /* igazítás */
+		}
+	
+	form#fizetes {
+		/* Form háttér és lekerekítés */
+		background: #96cedd; 
+		-moz-border-radius: 20px; /* ha kerek akkor szép */
+		-webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+		border-radius: 20px;
+		counter-reset: fieldsets; /* nullázzuk a számlálót */ 
+		padding: 10px; /* a form-ot körülvevő rész paddingját beállítjuk */
+		width: 500px; /* állítunk egy szélességet */
+		}
+		
+		form#fizetes fieldset { /* igazítjuk a számlálót */
+			border: none;
+			margin-bottom: 5px;
+			}
+
+		form#fizetes legend { /* számlálóhoz tartozó szöveg formázása */
+				color: #3b4e8c;
+				font-size: 16px;
+				font-weight: bold;
+				}
+				
+		form#fizetes > fieldset > legend:before { /* számláló utáni szöveg formázása, hogy mégis mit írjon ki */
+					content:  counter(fieldsets)"." " Lépés:"; /* ezt érdemes kipróbálni, állítgassátok, csak úgy lehet memorizálni */
+					counter-increment: fieldsets; /* mikor is nőveljük a számlálónkat ? Hát persze, fieldsets-enként */
+					}
+				
+		form#fizetes ol li { /* megformázzuk a form egyes sorait, és a körülvevő területet */
+				background: #59cfac;
+				background: rgba(255,255,255,.2); /* egy kis trükk, hogy szebb legyen. rgba - átlátszóság definicióval*/
+				border-color: #aab092;
+				border-color: rgba(255,255,255,.2);
+				border-style: solid;
+				border-width: 2px;
+				-moz-border-radius: 10px; /* ismét kerekítések, mert szeretjük a kerek formákat */
+				-webkit-border-radius: 10px;
+				-khtml-border-radius: 10px;
+				border-radius: 10px;
+				line-height: 10px; /* sor magasság definiálása */
+				list-style: none; /* hozzá tartozó stílus */
+				padding: 6px 12px; /* egy kis igazítás */
+				margin-bottom: 1px;
+				}
+							
+		form#fizetes ol ol li { /* Fizetés módja beviteli rész igazítása */
+					background: none;
+					border: none;
+					float: left;
+					}
+			
+		form#fizetes label { /* a form cimkéinek igazítása */
+				float: left;
+				font-size: 13px;
+				width: 150px;
+				}
+				
+		form#fizetes fieldset fieldset label { /* fizetés módja beviteli rész cimkéje, annak csinosítása */
+				background:none no-repeat left 60%;
+				line-height: 20px;
+				padding: 0 0 0 30px;
+				width: 30px;
+				}
+					
+	form#fizetes input:not([type=radio]), /* Fizetés módja rész radio típusának definiálása */
+	form#fizetes textarea { /* beviteli mező kinézetének/formázásának definiálása */
+				background: #ffffff;
+				border: none;
+				-moz-border-radius: 10px; /* újabb kerekítés.. */
+				-webkit-border-radius: 10px;
+				-khtml-border-radius: 10px;
+				border-radius: 10px;
+				font: italic 13px Georgia, serif;
+				outline: none;
+				padding: 5px;
+				width: 200px;
+				}
+				
+	form#fizetes input[type=radio] { /* Fizetés módja radio gomb helyzete */
+					float: left;
+					margin-right: 5px;
+					}
+						
+	form#fizetes button { /* megveszem gomb alaptulajdonságai */
+				background: #4b676e; 
+				border: none;
+				-moz-border-radius: 40px; /* még mindig kerek */ 
+				-webkit-border-radius: 40px;
+				-khtml-border-radius: 40px;
+				border-radius: 40px;
+				color: #ffffff;
+				display: block;
+				font: 18px Georgia, serif;
+				letter-spacing: 2px; /*betűk közötti hely növelése */
+				margin: auto;
+				padding: 7px 25px;
+				text-transform: uppercase; /* írjuk át nagybetűsre bármi is kerül a gombra */
+				}
+					
+	form#fizetes button:hover { /* megveszem gomb egér felette tulajdonságait */
+					background: #384d52;
+					cursor: help; /*ez csak egy kis példa, hogy a kurzor kinézetén is tudunk változtatni. */
+					}

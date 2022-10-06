@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Alakzatok létrehozása szegélyek segítségével - css3 szegélyek</title>
+  <meta charset="UTF-8">
+
+  <link rel="icon" type="image/gif" href="favicon.ico">
+
+  <style>
+    div {
+      margin: 5px;
+      float: left;
+      border: 1px solid green;
+      background-color: green;
+      color: #ffffff;
+      width: 150px;
+      height: 100px;
+      padding: 8px;
+      text-align: center;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+
+      /* Firefox */
+      display: -moz-box;
+      -moz-box-pack: center;
+      -moz-box-align: center;
+
+      /* W3C */
+      display: box;
+      box-pack: center;
+      box-align: center;
+    }
+
+    #id_0 {
+      border-radius: 50%;
+      width: 100px;
+    }
+
+    #id_1 {
+      border-radius: 50%;
+    }
+
+    #id_2 {
+      border-radius: 100px;
+    }
+
+    #id_3 {
+      border-radius: 50px 50px 50px 0;
+    }
+
+    #id_4 {
+      border-radius: 100px 0 100px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="id_0">
+    <p> Kör</p>
+  </div>
+  <div id="id_1">
+    <p> Ellipszis</p>
+  </div>
+  <div id="id_2">
+    <p> Két oldalt félkör</p>
+  </div>
+  <div id="id_3">
+    <p> Infő buborék</p>
+  </div>
+  <div id="id_4">
+    <p> Falevél</p>
+  </div>
+</body>
+
+</html>

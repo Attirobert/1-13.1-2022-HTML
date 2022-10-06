@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title> CSS3 transzformáció Kocka képekkel 1.</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="http://html5.gtportal.eu/css3/favicon.ico">   
+             
+<style>
+   
+   
+  .kocka {
+    position: fixed;
+    left: 50px;
+    top: 200px;}
+
+
+.jobbhatso,
+.balhatso,
+.jobbelso,
+.balelso,
+.also,
+.felso   {
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+}
+.also,
+.jobbhatso,
+.balhatso,
+.jobbelso,
+.balelso,
+.felso {
+    position: absolute; border:1px solid #111111;
+}
+
+.kocka:hover .jobbhatso
+.kocka:hover .jobbelso,
+.kocka:hover .balhatso,
+.kocka:hover .also,
+.kocka:hover .felso {
+    background-color: #ffc; 
+}
+
+.kocka:hover .jobbhatso:hover,
+.kocka:hover .balelso:hover,
+.kocka:hover .jobbelso:hover,
+.kocka:hover .balhatso:hover,
+.kocka:hover .also:hover,
+.kocka:hover .felso:hover  {
+    background-color: #ffa;
+}
+
+.jobbhatso {
+    -webkit-transform: skew(0deg, 30deg);
+    -moz-transform: skew(0deg, 30deg);
+    -o-transform: skew(0deg, 30deg);
+    -ms-transform: skew(0deg, 30deg);
+    transform: skew(0deg, 30deg);
+    background-color: #ccc;
+    
+    left: 200px;
+    top: -116px;
+}
+
+
+.balhatso {
+    -webkit-transform: skew(0deg, -30deg);
+    -moz-transform: skew(0deg, -30deg);
+    -o-transform: skew(0deg, -30deg);
+    -ms-transform: skew(0deg, -30deg);
+    transform: skew(0deg, -30deg);
+    background-color: #ccc;
+    left: 0px;
+    top: -116px;
+}
+
+
+.balelso {
+    -webkit-transform: skew(0deg, 30deg);
+    -moz-transform: skew(0deg, 30deg);
+    -o-transform: skew(0deg, 30deg);
+    -ms-transform: skew(0deg, 30deg);
+    transform: skew(0deg, 30deg);
+    background-color: #ccc;
+}
+
+.jobbelso {
+    -webkit-transform: skew(0deg, -30deg);
+    -moz-transform: skew(0deg, -30deg);
+    -o-transform: skew(0deg, -30deg);
+    -ms-transform: skew(0deg, -30deg);
+    transform: skew(0deg, -30deg);
+    background-color: #ddd;
+    left: 200px;
+}
+
+.felso  {
+    -webkit-transform:  rotate(60deg) skew(0deg, -30deg) scale(1, 1.16) ;
+    -moz-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16) ;
+    -o-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16) ;
+    -ms-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16) ;
+    transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16) ;
+    background-color: #eee;
+    font-size: 0.862em;
+        top: -158px;
+    left: 100px;
+}
+
+.also {
+    -webkit-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16);
+    -moz-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16);
+    -o-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16);
+    -ms-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16);
+    transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16);
+    background-color: #eee;
+    font-size: 0.862em;
+        top: 42px;
+    left: 100px;
+}
+
+.felso1 {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    top: -158px;
+    left: 100px;
+}
+
+.also1 {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    top: 42px;
+    left: 100px;
+}   
+</style>     
+</head> 
+   
+<body  style="background-color:#111111;">
+  <div class="kontener"> 
+    <div class="kocka">    
+        <div class="also">
+            <img src="Modern_halo_n.jpg" alt="minta kép" height="180px" width="180px"> 
+        </div>
+            <div class="jobbhatso">
+            <img src="Modern_halo_n.jpg" alt="minta kép" height="180px" width="180px"> 
+        </div>
+        <div class="balhatso">
+            <img src="Modern_halo_n.jpg" alt="minta kép" height="180px" width="180px"> 
+        </div>
+        <div class="felso">
+            <img src="Modern_halo_n.jpg" alt="minta kép" height="180px" width="180px"> 
+       </div>
+         <div class="balelso">            
+           <img src="Modern_halo_n.jpg" alt="minta kép" height="180px" width="180px"> 
+        </div> 
+         <div class="jobbelso">
+            <img src="Modern_halo_n.jpg" alt="minta kép" height="180px" width="180px"> 
+        </div>        
+    </div>
+  </div>    
+</body>
+</html>

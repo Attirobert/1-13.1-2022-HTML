@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title>transition-timing-function - időkarakterisztika - CSS3 átmenetek</title> 
+     <meta charset="UTF-8">
+<style>
+
+body {background: #ffffff; color:#000}
+#palya {
+width: 420px;
+}
+
+#palya div {
+width: 550px;
+margin: 2px 0;
+padding: 1px;
+color: white;
+}
+
+#palya1:hover div {
+width: 400px; 
+}
+
+#palya:hover img {
+ -webkit-transform: translateX(350px) rotate(340deg)  ;
+ -moz-transform: translateX(350px) rotate(340deg);
+ -o-transform: translateX(350px ) rotate(340deg);
+ -ms-transform: translateX(350px) rotate(340deg);
+ transform: translateX(350px) rotate(340deg);
+}
+
+#palya div.linear img {
+transition-property: transform;
+-webkit-transition-property: transform;
+transition-duration: 1s;
+-webkit-transition-duration: 3s;
+transition-timing-function: linear;
+-webkit-transition-timing-function: linear;
+}
+
+#palya div.ease img {
+transition-property: transform;
+-webkit-transition-property: transform;
+transition-duration: 3s;
+-webkit-transition-duration: 3s;
+transition-timing-function: ease;
+-webkit-transition-timing-function: ease;
+}
+
+ 
+#palya div.easein img{
+transition-property: transform;
+-webkit-transition-property: transform;
+transition-duration: 5s;
+-webkit-transition-duration: 3s;
+transition-timing-function: ease-in;
+-webkit-transition-timing-function: ease-in;
+}
+ 
+
+#palya div.easeout img{
+transition-property: transform;
+-webkit-transition-property: transform;
+transition-duration: 7s;
+-webkit-transition-duration: 3s;
+transition-timing-function: ease-out;
+-webkit-transition-timing-function: ease-out;
+}
+
+
+#palya div.easeinout img {
+transition-property: transform;
+-webkit-transition-property: transform;
+transition-duration: 9s;
+-webkit-transition-duration: 3s;
+transition-timing-function:  ease-in-out;
+-webkit-transition-timing-function:  ease-in-out;
+}  
+ 
+ 
+ 
+</style>     
+   </head> 
+<body>   
+  <div id="palya">
+  Linear (3s)<div>
+    <div class="linear"><img src="labda.jpg" alt="labda" width"50px" height="50px"> </div>
+  </div>
+  Ease (3s)<div>
+    <div class="ease"><img src="labda2.jpg" alt="labda" width"50px" height="50px"> </div>
+  </div>
+  Easein (3s)<div>
+    <div class="easein"><img src="labda.jpg" alt="labda" width"50px" height="50px"> </div>
+  </div>
+  Easeout (3s)<div>
+    <div class="easeout"><img src="labda2.jpg" alt="labda" width"50px" height="50px"> </div>
+  </div>
+  Easeinout (3s)<div>
+    <div class="easeinout"><img src="labda2.jpg" alt="labda" width"50px" height="50px"> </div>
+  </div>        
+    
+    
+    
+  </div>
+  
+
+
+
+</div>
+</body>
+</html>

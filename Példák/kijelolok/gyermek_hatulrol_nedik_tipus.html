@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title> Hátulról N-edik gyermek típuskijelölő - CSS3 szelektor</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="http://html5.gtportal.eu/css3/favicon.ico">   
+     <link href='http://fonts.googleapis.com/css?family=Fruktur&subset=latin-ext' rel='stylesheet' type='text/css'>        
+     <style>
+  	     
+
+body p:nth-last-of-type(1)
+{
+ background:#00ffff;
+}
+
+body p:nth-last-of-type(2)
+{
+ background:#ffff00;
+}
+
+
+body p:nth-last-of-type(2n)
+{
+ color:#000066;
+}
+
+     </style>     
+   </head>
+   <body>      
+      <h2>Címsor</h2>
+       <p> Első bekezdés</p> 
+       <p> Második bekezdés</p> 
+       <p> Harmadik bekezdés</p> 
+       <p> Negyedik bekezdés</p> 
+       <p> Ötödik bekezdés</p> 
+   </body>
+</html>
+<!- 
+/*Álelem kijelölő, amely kiválasztja az adott szülőelem n-edik megadott típusóú gyermekelemét, az utolsó elemtől kezdve a számlálást. Az n lehet szám, a kulcsszó, vagy a képlet.
+Az nth-child(2n) minden második, az nth-child(3n) pedig minden harmadik elemet fogja kiválasztani. A kiválasztás függ a gyermekelem típusától.
+
+*/
+->

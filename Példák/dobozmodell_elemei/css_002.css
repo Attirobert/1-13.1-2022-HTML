@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Rancho';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rancho'), url(http://fonts.gstatic.com/s/rancho/v6/S-YcqhLwgYWxIA-a7eDp2g.woff2) format('woff2'), url(http://fonts.gstatic.com/s/rancho/v6/puZHhCfWV5yqA8Qtz4KZUg.woff) format('woff');
+}
+.font-effect-shadow-multiple {
+  text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
+}

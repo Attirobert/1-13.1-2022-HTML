@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title> :before és :after - css3 beszúrt tartalom</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/gif" href="favicon.ico">
+  <style>
+    p:before {
+      content: "Bekezdés: ";
+      background-color: yellow;
+    }
+
+    h2:before {
+      content: url("../labdali.png") " ";
+    }
+
+    a:after {
+      content: " ("attr(href) ") ";
+    }
+
+    q:before {
+      content: open-quote;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Ez egy címsor </h2>
+  <p>Ez egy bekezdés</p>
+  <a href="http://informatika.gtportal.eu/"> Informatika tananyag</a>
+  <br> <br>
+  <q>Ez egy idézet</q>
+  <h2>Ez egy másik h2 sor</h2>
+</body>
+
+</html>

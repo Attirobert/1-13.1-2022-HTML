@@ -1,0 +1,59 @@
+<!-- 
+    Függvények:
+clear() – A Storage-ünk tartalmát tudjuk kiüríteni vele.
+setItem(key,value) – Ezen függvénnyel tudunk adatot tárolni a Storage-ban.  
+    rövid alakja: {sessionStorage|localStorage}.key(value);
+getItem(key) – Visszaadja a paraméterbe kapott kulcshoz tartozó értéket.
+        rövid alakja: {sessionStorage|localStorage}.key;
+key(index) – Visszaadja a megadott index-hez tartozó kulcsot.
+length – Visszaadja a tárolt kulcs-érték párok számát.
+removeItem(key) – A Storage-ben lévő adott kulcsú adat eltávolítására szolgál.
+
+onStorage event:
+Ha a weboldalunkhoz tartozó új adatot tárolunk (setItem), eltávolítunk adatot (removeItem) vagy töröljük a Storage tartalmát (clear) kiváltunk egy onStorage event-et, ami a következő értékekkel tér vissza:
+
+storageArea – Session vagy Local
+key – a kulcs ami változik
+oldValue – régi értéke
+newValue – az új értéke
+url – az oldal URL-je, melynek a kulcsa megváltozott.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Storage Demo</title>
+</head>
+
+<body>
+    <h1>Láttam már? Node hányszor?</h1>
+    <p>localStorage - Oldalbetöltések száma: <span id="localdarab">0</span> db</p>
+    <p>sessionStorage - Oldalbetöltések száma: <span id="sessiondarab">0</span> db</p>
+
+    <script type="text/javascript">
+
+        if (!localStorage.oldalbetoltes) //localStorage létrehozása, nullázása és oltalbetöltésenként +1 hozzáadása
+            localStorage.oldalbetoltes = 0;
+        localStorage.oldalbetoltes = 1 + parseInt(localStorage.oldalbetoltes);
+        document.getElementById('localdarab').innerHTML = localStorage.oldalbetoltes; //localdarab-ba eltesszük
+
+        if (!sessionStorage.oldalbetoltes) //sessionStorage létrehozása, nullázása és oltalbetöltésenként +1 hozzáadása
+            sessionStorage.oldalbetoltes = 0;
+        sessionStorage.oldalbetoltes = 1 + parseInt(sessionStorage.oldalbetoltes);
+        document.getElementById('sessiondarab').innerHTML = sessionStorage.oldalbetoltes; //sessiondarab-ba eltesszük
+
+        function slclear() { //Local- és SessionStorage törlése egy gomb segítségével
+            sessionStorage.clear();
+            localStorage.clear();
+        }
+
+    </script>
+
+    <p>Párszor frissíts rá az oldalra majd zárd be és nyisd meg újra a post-ból. Láthatod, hogy a localstorage megőrizte
+        a tartalmát, a sessionstorage
+        pedig elvesztette azt.</p>
+    <input type="button" value="Törlés" onclick="slclear();" />
+
+</body>
+
+</html>

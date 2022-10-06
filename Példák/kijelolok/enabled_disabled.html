@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title> Enabled és disabled kijelölők - CSS3 szelektor</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="http://html5.gtportal.eu/css3/favicon.ico">   
+             
+<style>
+  input[type="text"]:enabled {background:#00ff00;}
+  input[type="text"]:disabled {background:#aa0000;}
+
+</style>
+</head> 
+<body>   
+<form action="#"><br>
+  Engedélyezett: <input type="text" value="Engedélyezett" /><br>
+  Tiltott: <input type="text" value="Tiltott" disabled ><br>
+  Engedélyezett: <input type="text" value="Engedélyezett" /><br>
+  <input type="submit" name="submit1" value="Küldés">
+</form>  
+</body>
+</html>

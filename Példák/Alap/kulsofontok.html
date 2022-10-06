@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<!-- Részletesebben: https://developers.google.com/fonts/docs/getting_started -->
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Külső fontok</title>
+    <!-- Ezek a fontok nincsenek az alapkészletben -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Simonetta:400,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <style>
+        p {
+            font-family: 'Simonetta', cursive;
+            font-weight: 600;
+            font-size: 48px;
+        }
+
+        p.tang {
+            font-family: 'Tangerine', serif;
+            font-size: 48px;
+        }
+
+        p.ntang {
+            font-family: 'Tangerine', serif;
+            font-weight: normal;
+            font-size: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Árvíztűrő tükörfúrógép
+    </p>
+    <p class="tang">
+        <!-- A font-weight öröklődik a <p>-től -->
+        Árvíztűrő tükörfúrógép
+    </p>
+    <p class="ntang">
+        Making the Web Beautiful!
+    </p>
+</body>
+
+</html>

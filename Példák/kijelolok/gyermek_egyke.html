@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title> Egyke gyermek kijelölő - CSS3 szelektor</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="http://html5.gtportal.eu/css3/favicon.ico">   
+             
+     <style>
+  	     
+body em:only-child {background-color: teal;} 
+body p:only-child  {background-color: purple;} 
+
+     </style>     
+   </head>
+   <body>      
+       <p> A BODY első gyermeke vagyok <em>( p- utolsó )</em></p> 
+       <p> A BODY második gyermeke vagyok </p> 
+     <div> 
+       <p> A DIV első gyermeke <b>vagyok</b> </p>  
+     </div>  
+       <em> A BODY utolsó gyermeke vagyok </em> 
+   </body>
+</html>
+
+
+<!- 
+
+/*Kiválasztja azokat az elemeket, amelyek a szülő elemek egyetlen gyermekei.*/
+->

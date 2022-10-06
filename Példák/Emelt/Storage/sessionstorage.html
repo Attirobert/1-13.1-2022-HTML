@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Session Storage </title>
+</head>
+
+<body>
+    <script>
+
+        function adatbe() {
+            var nev = document.egyszeruform.Name.value;
+            sessionStorage.firstname = nev;
+        }
+
+        function adatki() {
+            alert(sessionStorage.firstname);
+        }
+
+    </script>
+    <div align="center">
+        <p> Mi a neved? Emlékezni fogok rá, de csak amíg be nem zársz!</p>
+        <form name="egyszeruform">
+            <input type="text" name="Name" />
+            <input type="submit" onclick="adatbe()" />
+            <input type="button" id="" value="Lekérdez" onclick="adatki()" />
+        </form>
+
+    </div>
+</body>
+
+</html>

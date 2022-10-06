@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head> 
+     <title> Fájlformátum dinamikus jelölése - CSS3 linkek</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="favicon.ico">   
+             
+ 
+           
+             
+<style>
+a[href$='.pdf']:after {content:  " "  url("pdf_ikon.png") " ";}
+a[href$='.odt']:after {content:  " "  url("odt_ikon.png") " ";}
+a[href$='.doc']:after, a[href$='.docx']:after {content: " " url("word_ikon.png");}
+</style>     
+</head>
+<body>            
+  <a href="....pdf">demo.pdf</a><br>
+  <a href="....odt">demo.odt</a><br>
+  <a href="....doc">demo.doc</a><br>  
+  <a href="....docx">demo.docx</a>   
+</body>
+</html>

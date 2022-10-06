@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+	<meta charset="utf-8">
+	<title>videó gyakorlás</title>
+	<meta name="author" content="Kovács Attila Róbert">
+	<meta name="keywords" content="Sirius,videó">
+	<meta name="description" content="videó beszúrás gyakorlása">
+</head>
+
+<body>
+	<h1>Videó beillesztés</h1>
+	<!-- 
+		width – videó ablak szélessége
+		height – videó ablak magassága
+		controls – irányító gombok megjelenítése
+		autoplay – automatikusan elindítja a videót
+		loop – a videó végtelenített lejátszása
+		muted – hang elnémítása
+		poster– egy képet tehetünk be, amíg rá nem kattintanak a play gombra, addig az látható
+		preload – a videót az oldallal együtt betölti
+		src – A forrásfájl helyét adhatjuk meg vele
+	 -->
+	<!-- 1. forma -->
+	<!-- <video src="./video/minta.mp4" width="50%" controls autoplay></video> -->
+	<!-- 2. forma -->
+	<video width="50%" controls autoplay>
+		<source src="./video/minta.avi" type="video/avi" />
+		<source src="./video/minta.mov" type="video/mov" />
+		<source src="./video/minta.wmv" type="video/wmv" />
+		<source src="./video/minta.ogg" type="video/ogg" />
+		<source src="./video/minta.mp4" type="video/mp4" />
+		A böngészője nem támogatja a videó elemet!
+	</video>
+</body>
+
+</html>

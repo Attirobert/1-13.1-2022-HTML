@@ -1,0 +1,57 @@
+﻿body {
+    margin: 0px auto; /*Megadja az elemek margóinak 4 értékét (felső, jobb, alsó, bal)*/
+    max-width:1000px; /*Szélesség definiálása (px - pixel)*/
+}
+
+header {
+    display:block; /*Meghatározza az elem rendezési tulajdonságait. (block - blokk-elemként)*/
+    text-align:center; /*Szöveg igazítása (center - középre)*/
+    padding:20px; /*Szükséges hely megadása az elem és az egyéb tartalom között*/ 
+}
+
+article
+{
+    display:block; 
+    margin: 15px;
+    padding: 15px;
+}
+
+nav{
+    display:block;
+    width:25%; /*az elem szélességének definiálása. */
+    float:left; /*Meghatározza hogy az elemet merre "lebegtetjük"*/
+    
+    
+}
+
+nav a:link{
+    display: block;
+    height:15px; /*Magasság meghatározása*/
+    padding: 10px;
+    padding-left: 10px; /*Az objektum bal oldala és az egyéb tartalom közötti hely meghatározása. */
+}
+
+#content-holder {
+    background-color: #B3B3B3;/*Háttér színének beállítása*/
+}
+
+section {
+    display:block;
+    width:50%;
+    float:left;
+}
+
+aside {
+    display:block;
+    width:20%;
+    float:right;
+    padding: 10px;
+    font-size: 12px; /*Betű méret definiálása*/
+}
+
+footer {
+    clear: both; /*A lebegő elemeket tünteti el a paraméter szerinti oldalakról. (both - mindkettő) */
+    display: block;
+    text-align:center;
+    padding: 5px;
+}

@@ -1,0 +1,74 @@
+
+#chmenu {display: none; }
+#MenuIkon1 {display: none; margin-top:-5px;}
+#MenuIkon2 {display: block; margin-top:-5px; }
+#chmenu:checked ~ #fent #infopanel #MenuIkon1 {display: block; }
+#chmenu:checked ~ #fent #infopanel #MenuIkon2 {display: none; }
+
+
+#chmenu:checked ~ #kozep #balsav {display: none; }
+#chmenu:checked ~ #kozep .tartalom {left:4px; width:auto;}
+
+#infopanel {padding-left:10px;}
+
+@media only screen and (min-width : 1020px)  {  
+#lap #fent #infopanel #MenuLabel #MenuIkon1 {display: none; }
+#lap #fent #infopanel #MenuLabel #MenuIkon2 {display: none;}
+}
+
+
+@media only screen and (max-width : 1000px)  {  
+ #fejlec #imgfl1 {font-size:0.8em; right:0px; }
+}
+
+@media only screen and (max-width : 840px)  {  
+ #fejlec #imgfl1 {font-size:0.6em; right:0px; } 
+}
+
+@media only screen and (max-width : 740px)  {  
+ #fejlec #imgfl1 {font-size:0.6em; left:90px; } 
+ #fejlec #imgfl0 img  {width:80px;}
+ 
+ #kereso input[type="text"]{width:150px;}
+ #kereso input[type="submit"]{width:50px;} 
+ 
+ .tartalom {padding: 10px 0px; margin:0px; width:100%;}
+}
+
+@media only screen and (max-width : 540px)  {  
+ #fejlec {font-size:1.1em;}
+ #fejlec #kereso {width:200px; top:60px;}
+ .tartalom {left:1px; width:100%;}
+ #infopanel .LinkBtn1 {font-size:0.8em;}
+ 
+  #kereso input[type="text"]{width:100px;}
+}
+
+@media only screen and (max-width : 540px)  { 
+  .kepes_menu_FoO {width:240px; height:auto;}
+  table {max-width:90% !important;}
+  table td, table th {display:block; border:0; width:90% !important;}
+
+  #tag_refi_1 th, #tag_refi_1 td {border:0; font-size:0.9em;}
+  #tag_refi_1 td a:link {font-size:10px;}
+  #tag_refi_1 {margin:2px; padding:2px; max-width:100%}
+  
+  .Bmenu_bal a {width:240px !important; height:auto; margin:0; padding:0; font-size:0.9em !important;}
+  body #lap #kozep .tartalom .Bmenu_bal a:link {width:240px; height:auto;}
+  
+  .Bmenu_leir {font-size:0.8em; padding-left:1px; margin-left:1px; width:95%;}
+  .Ghirdet {display: none;}
+  
+  .Bmenu_bal_pl a:link, .Bmenu_bal_pl a:hover, .Bmenu_bal_pl a, .Bmenu_bal_pl .leir001, .fonav .leir001  {width:240px !important; height:auto;}  
+  body .tartalom .Bmenu_bal_pl a:hover, .Bmenu_bal a:hover {width:240px !important; height:auto;}
+  
+  body .tartalom {font-size: 12px;}
+  .tartalom a {font-size: 12px;}
+  
+  #tananyag .dv_1 {font-size: 12px;}
+  
+  #kozep  .tartalom #tananyag .dv_1, .kod {font-size: 1em !important; height:auto  !important; }
+  
+  .kod, .tartalom, .demo, iframe {max-width:95% !important; }
+
+}

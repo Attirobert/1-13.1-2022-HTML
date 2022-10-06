@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head> 
+     <title>box-shadow - A szegélyek árnyékolása</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="favicon.ico">   
+             
+     <style>
+      div  {margin: 15px;float: left; border:1px solid green; background-color: green; color:#ffffff;
+            width: 150px; height: 100px; padding: 5px; border-radius: 20px; text-align:center;  
+display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;   
+
+/* Firefox */
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
+
+/* W3C */
+display:box;
+box-pack:center;
+box-align:center} 	     
+      #id_0 {box-shadow: 5px 5px 0px 0px #444444;}   
+      #id_1 {box-shadow: -5px -5px 0px 0px #444444;}   
+      #id_2 {box-shadow: -5px -5px 10px 0px #444444;}  
+      #id_3 {box-shadow: -3px -3px 10px 5px #444444;}   
+      #id_4 {box-shadow: 10px 0px 10px 2px #444444;}          	     
+     </style>     
+   </head>
+   <body>    
+     <div id="id_0">5px 5px 0 0</div>           
+     <div id="id_1">-5px -5px 0 0</div>
+     <div id="id_2">-5px -5px 5px 0</div>  
+     <div id="id_3">-3px -3px 10px 5px</div>   
+     <div id="id_4">10px 0 10px 2px</div>          
+   </body>
+</html>

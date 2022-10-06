@@ -1,0 +1,36 @@
+
+
+ table.stable {
+	/*width: 100%;*/
+	border-spacing: 0;
+}
+	table.stable th {
+		text-align: center;
+		border-bottom: 2px solid #08324d; background: #c0a385;
+	}
+	table.stable th a {
+		padding-right: 24px;
+	    background: url('../kepek/sort_no.gif') bottom right no-repeat;
+	}
+	table.stable th.asc a {
+	    background: url('../kepek/sort_up.gif') bottom right no-repeat;
+	}
+	table.stable th.des a {
+	    background: url('../kepek/sort_dn.gif') bottom right no-repeat;
+	}
+	table.stable tr.odd {
+		background: #ffeed9;
+	}
+	table.stable tr.even {
+		background: #c0a385;
+	}
+	table.stable tr.activerow {
+		background: #D8eFf4;
+		cursor: default;
+	}
+	table.stable td {
+		padding-left: 3px;
+	}
+
+
+

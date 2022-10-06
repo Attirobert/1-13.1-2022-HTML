@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title> Kijelölt tartalom kijelölő - CSS3 szelektor</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="http://html5.gtportal.eu/css3/favicon.ico">   
+             
+<style>
+  label::selection {color:#000000; background-color:#ffffff}
+  p::selection {color:#66ffff; background-color:#ff6666}
+  label::-moz-selection {color:#000000; background-color:#ffffff}
+  p::-moz-selection {color:#66ffff; background-color:#ff6666}
+</style>
+</head> 
+<body>   
+<form action="#"><br>
+  <input id="checkbox1" name="checkbox1" type="checkbox" checked>
+  <label for="checkbox1"> Ezen a címkén nem látszik, ha kijelik  </label>
+  <p>Ez a szöveg viszont szép színes lesz. </p>
+</form>  
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head> 
+     <title>border-image - Képes szegély - CSS3 szegélyek</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="favicon.ico">   
+             
+     <style>
+      div  {margin: 15px;float: left;  background-color: green; color:#ffffff;
+            width: 160px; height: 105px; padding: 5px;  text-align:center;  border:34px solid transparent;} 	     
+      #id_0 {-webkit-border-image:url(hatterkep_1.png) 34 34 stretch; /* Safari 5 */
+              -o-border-image:url(hatterkep_1.png) 34 34 stretch; /* Opera */
+              -moz-border-image:url(hatterkep_1.png) 34 34 stretch;
+              border-image:url(hatterkep_1.png) 34 34 stretch;} 
+      #id_1 {-webkit-border-image:url(hatterkep_1.png) 34 34 repeat; /* Safari 5 */
+              -o-border-image:url(hatterkep_1.png) 34 34 repeat; /* Opera */
+              -moz-border-image:url(hatterkep_1.png) 34 34 repeat;
+              border-image:url(hatterkep_1.png) 34 34 repeat;}    
+      #id_2 {-webkit-border-image:url(hatterkep_1.png) 34 34 round; /* Safari 5 */
+              -o-border-image:url(hatterkep_1.png) 34 34 round; /* Opera */
+              -moz-border-image:url(hatterkep_1.png) 34 34 round; 
+              border-image:url(hatterkep_1.png) 34 34 round;}  
+      #id_3 {-webkit-border-image:url(hatterkep_1.png) 34 34 repeat stretch; /* Safari 5 */
+              -o-border-image:url(hatterkep_1.png) 34 34 repeat stretch; /* Opera */
+              border-image:url(hatterkep_1.png) 34 34 repeat stretch;
+              -moz-border-image:url(hatterkep_1.png) 34 34 repeat stretch;}          
+       	     
+     </style>     
+   </head>
+   <body>    
+     <div id="id_0">stretch </div>           
+     <div id="id_1">repeat</div>
+     <div id="id_2">round</div>  
+     <div id="id_3">stretch round</div>        
+   </body>
+</html>

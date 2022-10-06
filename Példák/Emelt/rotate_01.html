@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title> rotate - középpont körüli forgatás - CSS3 transzformáció</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="http://html5.gtportal.eu/css3/favicon.ico">   
+             
+<style>
+    .body {padding: 50px;}
+    .tarolo {
+      width: 150px;
+      height: 150px;
+      border: 1px solid #CC0000;
+      margin: 10px 20px 20px 30px;
+      position: relative;
+      -webkit-perspective: 500px;
+         -moz-perspective: 500px;
+           -o-perspective: 500px;
+              perspective: 500px;
+              
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;             
+    }
+
+    .elem {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      opacity: 0.8;
+      color: white;
+      background: #004400;
+    }
+
+    #rotate_1 {
+      margin-top: 30px;
+    }
+
+    #rotate_1 .elem {
+      -webkit-transform: rotate( 45deg );
+         -moz-transform: rotate( 45deg );
+           -o-transform: rotate( 45deg );
+              transform: rotate( 45deg );
+    }
+
+    #rotate_2 .elem {
+      -webkit-transform: rotate( -45deg );
+         -moz-transform: rotate( -45deg );
+           -o-transform: rotate( -45deg );
+              transform: rotate( -45deg );
+    }
+    
+   #rotate_3 .elem {
+      -webkit-transform: rotate( -85deg );
+         -moz-transform: rotate( -85deg );
+           -o-transform: rotate( -85deg );
+              transform: rotate( -85deg );
+    }
+       
+</style>     
+   </head> 
+<body>   
+
+
+  <div id="rotate_1" class="tarolo">
+    <div class="elem">rotate( 45deg )</div>
+  </div>
+
+  <div id="rotate_2" class="tarolo">
+    <div class="elem">rotate( -45deg )</div>
+  </div>
+  <div id="rotate_3" class="tarolo">
+    <div class="elem">rotate( -85deg )</div>
+  </div>  
+
+</div>
+</body>
+</html>

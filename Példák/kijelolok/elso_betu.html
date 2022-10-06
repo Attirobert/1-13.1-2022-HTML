@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <title> Első betű kijelölő - CSS3 szelektor</title> 
+     <meta charset="UTF-8">
+            
+     <link rel="icon" type="image/gif" href="http://html5.gtportal.eu/css3/favicon.ico">   
+     <link href='http://fonts.googleapis.com/css?family=Fruktur&subset=latin-ext' rel='stylesheet' type='text/css'>        
+     <style>
+  	     
+p:first-letter
+{
+font-size:20px;
+color:#660000; font-family: 'Fruktur', cursive;
+}
+
+em:first-letter
+{
+color:#008800; /*Ez viszont nem működik.*/
+}
+     </style>     
+   </head>
+   <body>      
+       <p> A BODY első gyermeke vagyok <em>(p- utolsó)</em></p> 
+       <p> A BODY második gyermeke vagyok </p> 
+     <div> 
+       <p> A DIV első gyermeke vagyok </p> 
+       <p> A DIV utolsó gyermeke vagyok </p> 
+     </div> 
+       <p> A BODY utolsó gyermeke vagyok </p> 
+
+   </body>
+</html>
+
+
+<!- 
+/*Álelem kijelölő, amely kiválasztja bekezdések első betűit.*/
+->

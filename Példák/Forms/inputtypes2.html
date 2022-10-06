@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5 Forms demo 2</title>
+    </head>
+<body>
+<div>
+    <h3>Autocomplete</h3>
+	<p>Automatikus kiegészítés. Kapcsolói az on-off. Gyakorta hasznos lehet, ha a böngészőnek nem engedjük, hogy a beviteli mezőbe, az előzmények (már kitöltött űrlapok) alapján kínáljon értékeket</p>
+    <input type="text" name="autocomplete" autocomplete="on">
+</div>
+
+<div>
+    <h3>Autofocus</h3>
+	<p> Elem „focus”-ba állítása, azaz meghatározhatjuk, hogy a lap betöltődésekor melyik beviteli mezőre ugorjon először.</p>
+    <input type="text" name="autofocus" autofocus>
+</div>
+
+<div>
+    <h3>Formaction</h3>
+	Az egész űrlapmező ACTION attribútumát felülbírálja.
+    <input type="submit" formaction="http://html5.ugyesen.com" value="Save">
+</div>
+
+<div>
+    <h3>Formenctype</h3>
+	Az űrlapmező adatainak (MIME) kódolása. Az ENCTYPE attribútumot felülbírálja.
+    <input type="submit" formenctype="application/x-www-form-urlencoded" value="Save with enctype">
+</div>
+
+<div>
+    <h3>Formmethod</h3>
+	A METHOD attribútumot felülbírálja.
+    <input type="submit" formmethod="POST" value="Send as POST">
+</div>
+
+<div>
+    <h3>Formtarget</h3>
+	 A cél megnyitási helye
+    <input type="submit" formtarget="_blank" value="Post to new tab/window">
+</div>
+
+<div>
+    <h3>list</h3>
+    <input type="text" name="Autok" list="automarka">
+   <datalist id="automarka">
+	<option value="FORD">
+	<option value="OPEL">
+	<option value="FIAT">
+   </datalist>
+</div>
+
+<div>
+    <h3>max (100)</h3>
+    <input type="range" max="100">
+</div>
+
+<div>
+    <h3>min (50)</h3>
+    <input type="range" min="50">
+</div>
+
+<div>
+    <h3>multiple</h3>
+	többszörös kiválasztás engedélyezése
+    <input type="file" multiple>
+</div>
+
+<div>
+    <h3>readonly</h3>
+	Csak olvasható tartalommal bíró beviteli mező
+    <input type="text" readonly>
+</div>
+
+<div>
+    <h3>required</h3>
+	Kötelezően kitöltendő beviteli mezőt jelöl.
+    <input type="text" name="required" required>
+</div>
+
+<div>
+    <h3>Pattern (Csak nagybetü)</h3>
+    <input type="text" pattern="[A-Z]*">
+</div>
+
+<div>
+    <h3>Placeholder</h3>
+	Szöveg megjelenítése a beviteli mezőben
+    <input type="text" name="placeholder" placeholder="Írj ide">
+</div>
+
+<div>
+    <h3>Spellcheck</h3>
+	a mögöttes tartalom ellenőrzéséhez
+    <input type="text" spellcheck="true">
+</div>
+
+<div>
+    <h3>Step</h3>
+	a következő beviteli típusokkal használható: number, range, date, datetime, datetime-local, month, time and week.
+    <input type="number" step="5">
+</div>
+
+<div>
+    <input type="submit" value="Send">
+</div>
+
+</body>
+</html>

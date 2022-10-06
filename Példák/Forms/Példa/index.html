@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>HTML5 Form Demo</title>
+<link rel=stylesheet href=style.css type=text/css>
+</head>
+	
+<body>
+<h1>Egyszerű fizetési űrlap</h1>
+<form id=fizetes>
+	<fieldset>
+		<legend>Alapadataid</legend>
+			<ol>
+			 <li>
+				<label for=name>Név</label>
+				<input id=name name=name type=text placeholder="Családi és keresztnév" required autofocus>
+			 </li>
+			 <li>
+				<label for=email>E-mail</label>
+				<input id=email name=email type=email placeholder="email@domain.com" required>
+			 </li>
+			 <li>
+				<label for=phone>Mobiltelefon</label>
+				<input id=phone name=phone type=tel placeholder="+36201234567" required>
+			 </li>
+			</ol>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Cím</legend>
+			<ol>
+			 <li>
+				<label for=address>Cím</label>
+				<textarea id=address name=address rows=5 required></textarea>
+			 </li>
+			 <li>
+				<label for=postcode>Írányítószám</label>
+				<input id=postcode name=postcode type=text required>
+			 </li>
+			 <li>
+				<label for=country>Ország</label>
+				<input id=country name=country type=text required>
+			 </li>
+			</ol>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Fizetés módja</legend>
+		  <ol>
+		    <li>
+		     <fieldset>
+			 <ol>
+			  <li>
+				<input id=paypal name=cardtype type=radio>
+				<label for=paypal>Paypal</label>
+			  </li>
+			  <li>
+				<input id=skrill name=cardtype type=radio>
+				<label for=skrill>Skrill</label>
+			  </li>
+			 </ol>
+			</fieldset>
+		   </li>
+  		 </ol>
+	</fieldset>
+   	 	   
+   	<fieldset>
+				<button type=submit>Megveszem!</button>
+	</fieldset>
+</form>
+</body>
+</html>

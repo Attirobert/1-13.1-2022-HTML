@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Local Storage </title>
+</head>
+
+<body>
+
+    <script>
+        function adatbe() {
+            var nev = document.egyszeruform.Name.value;
+            localStorage.firstname = nev;
+        }
+
+        function adatki() {
+            alert(localStorage.firstname);
+        }
+    </script>
+
+    <div align="center">
+        <p> Mi a neved? Emlékezni fogok rá!</p>
+        <form name="egyszeruform">
+            <input type="text" name="Name" />
+            <input type="submit" onclick="adatbe()" />
+            <input type="button" id="" value="Lekérdez" onclick="adatki()" />
+        </form>
+    </div>
+</body>
+
+</html>
