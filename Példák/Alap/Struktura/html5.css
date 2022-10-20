@@ -7,6 +7,7 @@ header {
     display:block; /*Meghatározza az elem rendezési tulajdonságait. (block - blokk-elemként)*/
     text-align:center; /*Szöveg igazítása (center - középre)*/
     padding:20px; /*Szükséges hely megadása az elem és az egyéb tartalom között*/ 
+    background-color: bisque;
 }
 
 article
@@ -20,8 +21,7 @@ nav{
     display:block;
     width:25%; /*az elem szélességének definiálása. */
     float:left; /*Meghatározza hogy az elemet merre "lebegtetjük"*/
-    
-    
+    background-color: blueviolet;
 }
 
 nav a:link{
@@ -39,6 +39,7 @@ section {
     display:block;
     width:50%;
     float:left;
+    background-color: coral;
 }
 
 aside {
@@ -47,6 +48,7 @@ aside {
     float:right;
     padding: 10px;
     font-size: 12px; /*Betű méret definiálása*/
+    background-color: darkolivegreen;
 }
 
 footer {
@@ -54,4 +56,5 @@ footer {
     display: block;
     text-align:center;
     padding: 5px;
+    background-color: cadetblue;
 }
